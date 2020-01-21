@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDrawRoulette5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="number of case : 5" />
+
+        <Button
+            android:id="@+id/btnDrawRoulette6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="number of case : 6" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sharp_label_black_18dp2" />
+
+    <RelativeLayout
+        android:id="@+id/layoutRoulette"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_roulette">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_rotate"-->
+        <!--            android:layout_width="65dp"-->
+        <!--            android:layout_height="65dp"-->
+        <!--            android:text="돌리기"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:background="@drawable/button_selector"/>-->
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRotate"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="spin"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Result : "
+        android:textSize="32sp"/>
+
+</LinearLayout>
